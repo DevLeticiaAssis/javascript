@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom2</title>
+</head>
+<body>
+        <input id="nome" type="text" name="nome" value="" placeholder="Seu Nome" />
+        <button onclick="pegarNome()">Ok</button>
+        <p id="resposta"></p>
+
+        <script>
+            var docTitulo = document.title;
+            alert('Titulo.: ' + docTitulo)
+            document.title= "LETÍCIA DESENVOLVEDORA"; 
+
+            function pegarNome() {
+            //Pega o valor do input
+            var x = document.getElementById("nome").value;
+
+            //Injeta o valor no paragrafo com id 'resposta'
+            document.getElementById("resposta").getElementById("resposta").innerHTML = x;
+            }
+        </script>
+
+</body>
+</html>

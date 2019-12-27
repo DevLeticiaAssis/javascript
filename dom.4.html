@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+    </head> 
+
+        <body>
+
+        <p id ='text'>JavaScript Exercises - w3resource</p> 
+
+        <div>
+        <!--<button onclick="changeColor('blue');">blue</button>-->
+        <!--<button onclick="changeColor('red');">red</button>-->
+        <button id="jsstyle" onclick="js_style()">Style</button>
+        
+        </div>
+        </body>
+
+        <script>
+            //function changeColor(newColor)
+        //{
+            //var elem = document.getElementById('text');
+            //elem.style.color = newColor;
+        //}
+            
+            function js_style() 
+        {
+            document.getElementById("text").style.color="red";
+            document.getElementById("text").style.fontSize="xx-large";
+            document.getElementById("text").style.backgroundColor="green";
+        }
+        </script>
+</html>
+
+
